@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/formstyle.css">
+		<link rel="stylesheet" href="./css/all.min.css">
+    </head>
+	<body>
+<div class="container">
+	<div class="header">
+		<h2>Rregjistrohu</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="elementet">
+			<label for="username">Username</label>
+			<input tabindex="1" type="text" placeholder="majlaballkoci01" id="username" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Mesazh gabimi</small>
+		</div>
+		<div class="gjini">
+			<P>Gjinia:</P>
+			<input tabindex="2" type="radio" id="F" name="gjinia" value="F" >
+	         <label for="F">F</label>
+	         <input type="radio" id="M" name="gjinia" value="M" >
+	         <label for="M">M</label>
+			<i id="err_icon" class="fas fa-exclamation-circle"></i>
+			<p id="err_msg">Duhet te zgjidhet nje gjini</p>
+		</div>
+
+		<div class="kombesia">
+			<p>Kombesia</p>
+			<input  id="liste" list="kombesia" name="kombesia" placeholder="Zgjidh nga lista">
+			<datalist id="kombesia">
+				<option value="Shqipetar">
+				<option value="Amerikan">
+				<option value="Italian">
+				<option value="Gjerman">
+				<option value="Tjeter">
+			</datalist>
+			<p id="err_msg_list">Duhet te zgjidhet nje opsion nga lista</p>
+		</div>
+    
+		<div class="elementet">
+			<label for="username">Email</label>
+			<input  type="email" placeholder="emermbiemer@gmail.com" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Mesazh gabimi</small>
+		</div>
+		<div class="elementet">
+			<label for="username">Fjalekalimi</label>
+			<input  type="password" placeholder="Fjalekalimi" id="fjalekalimi"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Mesazh gabimi</small>
+		</div>
+		<div class="elementet">
+			<label for="username">Rishkruaj fjalekalimin</label>
+			<input  type="password" placeholder="Fjalekalimi" id="fjalekalimi2"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Mesazh gabimi</small>
+		</div>
+		<div class="elementet">
+			<label for="tel">Nr Celularit:</label>
+			<input  type="tel" id="tel" name="tel" placeholder="069-310-4878">
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Mesazh gabimi</small>
+	</div>
+
+	<div class="">
+		<p>Cfare te pelqen?</p>
+		<input  type="checkbox" id="mali" name="mali" value="mali">
+		<label for="vehicle1"> Mali </label><br>
+		<input type="checkbox" id="deti" name="deti" value="deti">
+		<label for="vehicle2"> Deti </label><br>
+		<input type="checkbox" id="qyteti" name="qyteti" value="qyteti">
+		<label for="vehicle3"> Qyteti </label><br><br>
+	</div>
+	<!-- Drag and drop -->
+
+		<fieldset>
+		<legend>Vendos foton e ID</legend>
+		
+		<input  type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+		
+		<div>
+			<label for="fileselect">Ngarko foton:</label>
+			<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+			<div id="filedrag">ose beje drop ketu</div>
+		</div>
+		
+		<div id="submitbutton">
+			<button type="submit">Upload Files</button>
+		</div>
+		
+		</fieldset>
+		<div id="messages">
+			<p></p>
+			</div>
+	
+			
+	<button>Dergo</button>
+	<input type="reset" value="Fshi" class="reset">
+	</form>
+</div>
+<script src="./js/jsForm.js"></script>
+</body>
+</html>

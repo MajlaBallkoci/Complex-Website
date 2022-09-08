@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(101,19,19,1) 50%, rgba(144,0,0,1) 100%);
+    color: white;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu ul li:hover::after{
+    width:100%;
+}
+
+.titulli {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Cafe Matcha';
+    font-size: 50px;
+}
+
+.historia {
+    margin: 30px 30px 0 30px;
+    display: flex;
+}
+
+.teksti {
+   
+    margin-right: 40px;
+}
+.teksti h2{
+    font-size: 20px;
+}
+.teksti p{
+    font-size: 16px;
+}
+
+.historia img {
+    border-radius: 40px;
+    transition: 1s;
+    transform: rotateY(40deg);
+}
+
+.historia img:hover {
+    border-radius: 0px;
+    transform: rotateY(0deg);
+}
+
+.imazhi{
+    width: 250px;
+    height:400px;
+}
+.footer{
+    font-size: 15px;
+    margin-left: 450px;
+}
+a:link{
+    color:blueviolet;
+}
+a:hover{
+    color: pink;
+}
+a:visited{
+    color: green;
+}
+@media(max-width: 500px){
+    .historia{
+        display:flex;
+        flex-direction: column;
+    }
+    .historia img{
+        margin-top: 10px;
+    }
+    .titulli {
+        font-size: 30px;
+}
+.teksti h2 {
+    font-size: 18px;
+}
+nav{
+    margin-right: 90px;
+}
+nav img{
+    display:none;
+}
+ul{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+}
+@font-face {
+    font-family: 'Cafe Matcha';
+    src: url(../font/Cafe\ Matcha.ttf) format('truetype');
+}
